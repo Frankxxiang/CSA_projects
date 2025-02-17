@@ -7,9 +7,9 @@ public class MatrixAdditionExample {
         int[][] Result=new int[3][3];
         Scanner sc = new Scanner(System.in);
         System.out.println("Enther the elements for MatrixA:");
-        for (int i = 0; i<MatrixA.length;i++){
-            for (int j=0;j<MatrixA[0].length;j++){
-                MatrixA[i][j]=sc.nextInt();
+        for (int[] MatrixA1 : MatrixA) {
+            for (int j = 0; j<MatrixA[0].length; j++) {
+                MatrixA1[j] = sc.nextInt();
             }
         }
         System.out.println("Enter the elements for MatrixB: ");
